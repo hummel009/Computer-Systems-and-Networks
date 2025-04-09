@@ -471,7 +471,7 @@ class Worker(private val controlSocket: Socket, private val dataPort: Int) : Thr
 	@Suppress("DEPRECATION")
 	private fun debugOutput(msg: String) {
 		if (debugMode) {
-			println("Thread " + getId() + ": " + msg)
+			println("Thread $id: $msg")
 		}
 	}
 }
